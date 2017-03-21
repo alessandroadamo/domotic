@@ -1,11 +1,11 @@
 --- Wifi Parameters ---
-WIFI_SSID = "xxxxxx"
-WIFI_PWD = "xxxxxx"
+WIFI_SSID = "Vodafone-80753518"
+WIFI_PWD = "da9v4cllcfm7bii"
 
 -- WiFI IP config (leave blank to use DHCP)
-ESP8266_IP = ""
-ESP8266_NETMASK = ""
-ESP8266_GATEWAY = ""
+ESP8266_IP = "192.168.1.201"
+ESP8266_NETMASK = "255.255.255.0"
+ESP8266_GATEWAY = "192.168.1.1"
 
 
 WIFI_TIMER = 0
@@ -28,4 +28,5 @@ PIN_ERROR = 0
 PWM_MAX_VAL = 255
 PWM_CLOCK = 1000
 PWM_DUTY = 1023
-PWM_PIN = 1
+-- PWM_PIN = 1
+PWM_PIN = 5

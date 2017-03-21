@@ -71,9 +71,10 @@ tmr.alarm(WIFI_TIMER, STATUS_CHECK_INTERVAL, tmr.ALARM_AUTO,
     
         getWiFiStatus()
 
-        --[[        
         if isWifiReady == true and isMqttReady == true then
-            print("WiFi Status: true Mqtt Status: true") 
+            print("WiFi Status: true Mqtt Status: true")
+            m:publish(MQTT_TOPIC .. "/status", "I am alive!", 0, 0)
+            print("Status: " .. MQTT_TOPIC .. "/status: I am alive!")
         elseif isWifiReady == true and isMqttReady == false then
             print("WiFi Status: true Mqtt Status: false") 
         elseif isWifiReady == false and isMqttReady == true then
@@ -81,7 +82,7 @@ tmr.alarm(WIFI_TIMER, STATUS_CHECK_INTERVAL, tmr.ALARM_AUTO,
         else
             print("WiFi Status: false Mqtt Status: false") 
         end
-        ]]--
+        
         
         -- Stop from getting invifinite loop --
         if isWifiReady == false then

@@ -32,7 +32,7 @@ m:on("message",
                         if (r > PWM_MAX_VAL) then r = PWM_MAX_VAL end
                 pwm.setduty(PWM_PIN, r * PWM_DUTY / PWM_MAX_VAL)
                 m:publish(MQTT_TOPIC .. "/state", r, 0, 0) 
-                print("Status: " .. topic .. "/state:" .. r)
+                print("Status: " .. MQTT_TOPIC .. "/state:" .. r)
                     else
                         print("Invalid message: " .. data)
                     end
