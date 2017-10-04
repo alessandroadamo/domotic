@@ -1,6 +1,6 @@
 --- Wifi Parameters ---
-WIFI_SSID = "Vodafone-80753518"
-WIFI_PWD = "da9v4cllcfm7bii"
+WIFI_SSID = "xxxxxxxx"
+WIFI_PWD = "xxxxxxxx"
 
 -- WiFI IP config (leave blank to use DHCP)
 ESP8266_IP = "192.168.1.201"
